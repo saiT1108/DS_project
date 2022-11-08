@@ -1,1 +1,7 @@
-
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10,10))
+plt.bar(sampled_df['TOR_F_SCALE'], sampled_df['DAMAGE_PROPERTY'])
+plt.xlabel('Tornado Scale')
+plt.ylabel('Damage Property')
+plt.show()
+plt.savefig('tornado_scale_damage_property.png')
