@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 fig = plt.figure()
 ax = fig.add_axes([0,0,1,1])
 scales = ['EF0', 'EF1', 'EF2', 'EF3', 'EF4', 'EF5']
-property_dmg = []
+property_dmg = df_all_data('
 ax.bar(scales,property_dmg)
 plt.show()
+plt.savefig('foo.png')
